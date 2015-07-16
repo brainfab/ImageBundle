@@ -1,4 +1,4 @@
-<?php namespace SmallTeam\Engines;
+<?php namespace SmallTeam\ImageBundle\Engines;
 
 /**
  * ImageEngineInterface

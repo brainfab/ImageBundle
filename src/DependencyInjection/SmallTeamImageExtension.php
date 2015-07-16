@@ -1,4 +1,4 @@
-<?php namespace SmallTeam\Image\DependencyInjection;
+<?php namespace SmallTeam\ImageBundle\DependencyInjection;
 
 use Symfony\Component\HttpKernel\DependencyInjection\Extension;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
