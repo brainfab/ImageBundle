@@ -1,0 +1,24 @@
+{
+    "name": "small-team/image-bundle",
+    "type": "symfony-bundle",
+    "description": "Image manipulation bundle for Symfony 2",
+    "keywords": ["Symfony 2", "image manipulation", "image resize"],
+    "homepage": "https://github.com/small-team/ImageBundle",
+    "authors": [
+        {
+            "name": "Max Kovpak",
+            "email": "max_kovpak@hotmail.com",
+            "homepage": "http://www.max-kovpak.com"
+        }
+    ],
+    "version": "1.0.0-dev",
+    "license": "MIT",
+    "require": {
+        "php": ">=5.4.0",
+        "symfony/framework-bundle": "~2.3"
+    },
+    "autoload": {
+      "psr-0": {"SmallTeam\\ImageBundle\\": "src"}
+    },
+    "target-dir": "SmallTeam/ImageBundle"
+}
