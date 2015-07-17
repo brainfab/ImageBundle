@@ -11,7 +11,7 @@
             "homepage": "http://www.max-kovpak.com"
         }
     ],
-    "version": "1.0.0",
+    "version": "2.0.0-dev",
     "license": "MIT",
     "require": {
         "php": ">=5.4.0",
