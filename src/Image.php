@@ -1,8 +1,6 @@
 <?php namespace SmallTeam\ImageBundle;
 
-use SmallTeam\Engines\ImageEngineInterface;
-use Symfony\Component\Debug\Exception\ClassNotFoundException;
-use Symfony\Component\DependencyInjection\Container;
+use SmallTeam\ImageBundle\Engines\ImageEngineInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 
 /**
@@ -31,6 +29,12 @@ class Image
 
     /**
      * fitIn
+     *
+     * @param string $source
+     * @param string $destination
+     * @param string $dimensions Example: 150x150
+     * @param string $gravity
+     * @return void
      * */
     public function fitIn($source, $destination, $dimensions, $gravity = 'center')
     {
@@ -39,6 +43,12 @@ class Image
 
     /**
      * fitOut
+     *
+     * @param string $source
+     * @param string $destination
+     * @param string $dimensions Example: 150x150
+     * @param string $gravity
+     * @return void
      * */
     public function fitOut($source, $destination, $dimensions, $gravity = 'center')
     {
@@ -47,6 +57,13 @@ class Image
 
     /**
      * fitInFull
+     *
+     * @param string $source
+     * @param string $destination
+     * @param string $dimensions Example: 150x150
+     * @param string $gravity
+     * @param array $additional_process
+     * @return void
      * */
     public function fitInFull($source, $destination, $dimensions, $gravity = 'center', $additional_process = array())
     {
@@ -55,6 +72,9 @@ class Image
 
     /**
      * getImageInfo
+     *
+     * @param string $path
+     * @return null|array
      * */
     public function getImageInfo($path)
     {
