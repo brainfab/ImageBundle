@@ -14,7 +14,7 @@ class Configuration implements ConfigurationInterface
     public function getConfigTreeBuilder()
     {
         $treeBuilder = new TreeBuilder();
-        $rootNode = $treeBuilder->root('app_notification');
+        $rootNode = $treeBuilder->root('smallteam_image');
 
         $rootNode
             ->children()
