@@ -24,7 +24,7 @@ class Image
     {
         $this->container = $container;
         $engine_class = $this->container->getParameter('smallteam_image.image_engine');
-        $this->engine = new $engine_class;
+        $this->engine = new $engine_class($container);
     }
 
     /**
