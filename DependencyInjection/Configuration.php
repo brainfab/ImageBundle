@@ -19,7 +19,7 @@ class Configuration implements ConfigurationInterface
         $rootNode
             ->children()
                 ->scalarNode('base_dir')->defaultValue('%kernel.root_dir%/../web/uploads')->end()
-                ->scalarNode('image_engine')->defaultValue('SmallTeam\Engines\GDImageEngine')->end()
+                ->scalarNode('image_engine')->defaultValue('SmallTeam\ImageBundle\Engines\GDImageEngine')->end()
                 ->scalarNode('imagick_path')->defaultNull()->end()
             ->end()
         ;
