@@ -19,5 +19,6 @@
     },
     "autoload": {
       "psr-0": {"SmallTeam\\ImageBundle\\": ""}
-    }
+    },
+    "target-dir": "SmallTeam/ImageBundle"
 }
