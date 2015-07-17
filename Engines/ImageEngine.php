@@ -21,7 +21,7 @@ abstract class ImageEngine implements ImageEngineInterface
     public function __construct(ContainerInterface $container)
     {
         $this->container = $container;
-        $this->base_dir = $this->container()->getParameter('base_dir');
+        $this->base_dir = $this->container()->getParameter('smallteam_image.base_dir');
     }
 
     /**

@@ -23,7 +23,7 @@ class Image
     public function __construct(ContainerInterface $container)
     {
         $this->container = $container;
-        $engine_class = $this->container->getParameter('image_engine');
+        $engine_class = $this->container->getParameter('smallteam_image.image_engine');
         $this->engine = new $engine_class;
     }
 

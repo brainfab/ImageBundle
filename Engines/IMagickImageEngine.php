@@ -16,7 +16,7 @@ class IMagickImageEngine extends ImageEngine
     public function __construct(ContainerInterface $container)
     {
         parent::__construct($container);
-        $this->_imagick_executable = $container->getParameter('imagick_path') . '/' . $this->_imagick_executable;
+        $this->_imagick_executable = $container->getParameter('smallteam_image.imagick_path') . '/' . $this->_imagick_executable;
     }
 
     public function crop($from, $to, $dimension, $gravity = 'center')
