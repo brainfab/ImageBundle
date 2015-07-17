@@ -5,7 +5,7 @@ use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Loader\YamlFileLoader;
 use Symfony\Component\Config\FileLocator;
 
-class AppExtension extends Extension
+class SmallTeamImageExtension extends Extension
 {
     /**
      * {@inheritdoc}
