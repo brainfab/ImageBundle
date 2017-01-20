@@ -126,6 +126,6 @@ class GDImageEngine extends ImageEngine
             imagecopyresampled($new_image, $old_image, $to_x, $to_y, $from_x, $from_y, $to_sizes[0], $to_sizes[1], $from_sizes[0], $from_sizes[1]);
         }
 
-        call_user_func('image'.$type, $new_image,$to, $type == 'png' ? 9 : 100);
+        call_user_func('image'.$type, $new_image,$to, $type == 'png' ? 0 : 100);
     }
 }
