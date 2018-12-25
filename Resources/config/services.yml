@@ -2,4 +2,4 @@ services:
     image:
         class: SmallTeam\ImageBundle\Image
         arguments:
-            - @service_container
+            - '@service_container'
